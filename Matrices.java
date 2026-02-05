@@ -6,14 +6,14 @@ public class Matrices {
         int matriz1[][]=completarMatriz(filas, columnas, "primera");
         int matriz2[][]=completarMatriz(filas, columnas, "segunda");
 
-        int matriznum1[][]=matriz1;
+        int matriznum[][]=matriz1;
 
         System.out.println("La primera matriz es esta:");
-        mostrarlaMatriz(matriznum1);
+        mostrarlaMatriz(matriznum);
 
-        matriznum1=matriz2;
+        matriznum=matriz2;
         System.out.println("La segunda matriz es esta:");
-        mostrarlaMatriz(matriznum1);
+        mostrarlaMatriz(matriznum);
 
         int resultadodematriz[][]=sumarMatrices( matriz1, matriz2);
         System.out.println("La suma de las matrices es la siguiente");
@@ -88,8 +88,8 @@ public class Matrices {
     }
 
     public static void mostrarlaMatriz(int [][] matriz) {
-        for (int i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz[0].length; j++) {
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 3; j++) {
                 System.out.print(matriz[i][j] + "\t");
             }
             System.out.println();
