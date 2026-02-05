@@ -6,6 +6,15 @@ public class Matrices {
         int matriz1[][]=completarMatriz(filas, columnas, "primera");
         int matriz2[][]=completarMatriz(filas, columnas, "segunda");
 
+        int matriznum1[][]=matriz1;
+
+        System.out.println("La primera matriz es esta:");
+        mostrarlaMatriz(matriznum1);
+
+        matriznum1=matriz2;
+        System.out.println("La segunda matriz es esta:");
+        mostrarlaMatriz(matriznum1);
+
         int resultadodematriz[][]=sumarMatrices( matriz1, matriz2);
         System.out.println("La suma de las matrices es la siguiente");
         mostrarlaMatriz(resultadodematriz);
@@ -39,8 +48,8 @@ public class Matrices {
 
 
     public static int[][] sumarMatrices(int[][] matriz1, int[][] matriz2) {
-        int filas = matriz1.length;
-        int columnas = matriz1[0].length;
+        int filas = 2;
+        int columnas = 3;
         int resultado[][] = new int[filas][columnas];
 
         for (int i = 0; i < filas; i++) {
@@ -52,8 +61,8 @@ public class Matrices {
     }
 
     public static int[][] multiplicarMatrices(int[][] matriz1, int[][] matriz2) {
-        int filas = matriz1.length;
-        int columnas = matriz1[0].length;
+        int filas = 2;
+        int columnas = 3;
         int resultado[][] = new int[filas][columnas];
 
         for (int i = 0; i < filas; i++) {
@@ -66,8 +75,8 @@ public class Matrices {
 
 
     public static int[][] restarMatrices(int[][] matriz1, int[][] matriz2) {
-        int filas = matriz1.length;
-        int columnas = matriz1[0].length;
+        int filas = 2;
+        int columnas = 3;
         int resultado[][] = new int[filas][columnas];
 
         for (int i = 0; i < filas; i++) {
